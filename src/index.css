@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Convert https://kombu.kanejaku.org */
+
+/* eUkraine */
+@font-face {
+  font-family: "eUkraine";
+  src: url("/fonts/eUkraine/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eUkraine";
+  src: url("/fonts/eUkraine/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eUkraine";
+  src: url("/fonts/eUkraine/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* eUkraineHead */
+@font-face {
+  font-family: "eUkraineHead";
+  src: url("/fonts/eUkraineHead/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eUkraineHead";
+  src: url("/fonts/eUkraineHead/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eUkraineHead";
+  src: url("/fonts/eUkraineHead/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* aptosNarrow */
+@font-face {
+  font-family: "aptosNarrow";
+  src: url("/fonts/aptosNarrow/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aptosNarrow";
+  src: url("/fonts/aptosNarrow/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* aptos */
+@font-face {
+  font-family: "aptos";
+  src: url("/fonts/aptos/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aptos";
+  src: url("/fonts/aptos/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aptos";
+  src: url("/fonts/aptos/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* googleSans */
+@font-face {
+  font-family: "googleSans";
+  src: url("/fonts/googleSans/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "googleSans";
+  src: url("/fonts/googleSans/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "googleSans";
+  src: url("/fonts/googleSans/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* mailSans */
+@font-face {
+  font-family: "mailSans";
+  src: url("/fonts/mailSans/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mailSans";
+  src: url("/fonts/mailSans/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mailSans";
+  src: url("/fonts/mailSans/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* mont */
+@font-face {
+  font-family: "mont";
+  src: url("/fonts/mont/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mont";
+  src: url("/fonts/mont/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mont";
+  src: url("/fonts/mont/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* tTFirstNeue */
+@font-face {
+  font-family: "tTFirstNeue";
+  src: url("/fonts/tTFirstNeue/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tTFirstNeue";
+  src: url("/fonts/tTFirstNeue/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tTFirstNeue";
+  src: url("/fonts/tTFirstNeue/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* mazzardH */
+@font-face {
+  font-family: "mazzardH";
+  src: url("/fonts/mazzardH/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mazzardH";
+  src: url("/fonts/mazzardH/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mazzardH";
+  src: url("/fonts/mazzardH/font-semibold.woff2") format("woff2");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mazzardH";
+  src: url("/fonts/mazzardH/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* rozetka */
+@font-face {
+  font-family: "rozetka";
+  src: url("/fonts/rozetka/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+/* caveat */
+@font-face {
+  font-family: "caveat";
+  src: url("/fonts/caveat/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "caveat";
+  src: url("/fonts/caveat/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* jetBrainsMono */
+@font-face {
+  font-family: "jetBrainsMono";
+  src: url("/fonts/jetBrainsMono/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "jetBrainsMono";
+  src: url("/fonts/jetBrainsMono/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "jetBrainsMono";
+  src: url("/fonts/jetBrainsMono/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  @apply w-2.5;
+}
+::-webkit-scrollbar-track {
+  @apply bg-white;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-black;
+}
+
+/* Embla */
+
+.embla {
+  @apply w-full;
+  --slide-size: fit-content;
+}
+
+.embla__container {
+  @apply w-full flex gap-4;
+  backface-visibility: hidden;
+  touch-action: pan-y;
+}
+
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+}
+
+body {
+  background-color: #efeeea;
+}
