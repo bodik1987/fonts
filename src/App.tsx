@@ -36,7 +36,8 @@ export default function App() {
         className={`${selectedFont.font} ${selectedWeight} text-2xl md:text-3xl bg-white text-neutral-800 p-3 md:p-4`}
       >
         <span className="text-[#9B3C3C]">FONTS for UA | PL | EN </span>
-        1234567890 іZażółć Уукїнас ьимерхоті єgęśląjaźń $ ₴ € Ї=-+.,!@#$%^&*()_
+        123 456 789 0іZ ażó łćУ укї нас ьим ерх оті єgę ślą jaź ń$₴ €Ї= -+. ,!@
+        #$% ^&* ()_
       </p>
 
       <p className="mt-6 label">Fonts</p>
@@ -74,36 +75,36 @@ export default function App() {
             ))}
           </div>
         </div>
+      </div>
 
-        <div>
-          <p className="label">Second font</p>
-          <div className="mt-2 w-full flex flex-col gap-2 relative whitespace-nowrap">
-            {fontsList && (
-              <>
-                <div
-                  onClick={() => setFontsList(false)}
-                  className="fixed bg-black/45 backdrop-grayscale inset-0 z-10"
-                />
-                <div className="absolute bottom-full -translate-y-2 right-0 flex flex-col bg-white max-h-[280px] overflow-y-auto z-20  rounded-md">
-                  {fonts.map((font) => (
-                    <FontNameButton
-                      key={font.id}
-                      font={font}
-                      selectedFont={secondFont}
-                      setSelectedFont={setSecondFont}
-                      onClose={() => setFontsList(false)}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
-            <button
-              onClick={() => setFontsList(!fontsList)}
-              className="w-fit h-10 px-3 bg-[#FCE35B] font-medium rounded-md"
-            >
-              {secondFont.name}
-            </button>
-          </div>
+      <div className="mt-8">
+        <p className="label">Second font</p>
+        <div className="mt-2 w-full flex flex-col gap-2 relative whitespace-nowrap">
+          {fontsList && (
+            <>
+              <div
+                onClick={() => setFontsList(false)}
+                className="fixed bg-black/45 backdrop-grayscale inset-0 z-10"
+              />
+              <div className="absolute bottom-full -translate-y-2 left-0 flex flex-col bg-white max-h-[280px] overflow-y-auto z-20 rounded-md">
+                {fonts.map((font) => (
+                  <FontNameButton
+                    key={font.id}
+                    font={font}
+                    selectedFont={secondFont}
+                    setSelectedFont={setSecondFont}
+                    onClose={() => setFontsList(false)}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+          <button
+            onClick={() => setFontsList(!fontsList)}
+            className="w-fit h-10 px-3 bg-[#FCE35B] font-medium rounded-md"
+          >
+            {secondFont.name}
+          </button>
         </div>
       </div>
 
@@ -112,7 +113,7 @@ export default function App() {
         type="text"
         value={input}
         placeholder="Enter text"
-        className={`${selectedFont.font} ${selectedWeight} mt-8 p-4 outline-none focus:border-4 focus:border-[#9B3C3C] leading-none w-full border-4 border-[#FC8C67] rounded-t-md`}
+        className={`${selectedFont.font} ${selectedWeight} mt-4 p-4 outline-none focus:border-4 focus:border-[#9B3C3C] leading-none w-full border-4 border-[#FC8C67] rounded-t-md`}
         onChange={(e) => setInput(e.target.value)}
         onBlur={() => setLocalText(input)}
       />
@@ -125,16 +126,16 @@ export default function App() {
       </div>
 
       <p className="mt-8 label">Downloads</p>
-      <div className="mt-1 flex gap-4">
+      <div className="mt-1 flex gap-1">
         <a
-          className="block w-fit bg-[#0A8064] text-white px-4 py-3 font-medium text-sm uppercase rounded-md"
+          className="block w-fit bg-[#9B3C3C] text-white px-4 py-3 font-medium text-sm uppercase rounded-l-md"
           href="/fonts.zip"
           download="fonts.zip" // Sets the name of the downloaded file
         >
           All fonts
         </a>
         <a
-          className="block w-fit bg-[#0A8064] text-white px-4 py-3 font-medium text-sm uppercase rounded-md"
+          className="block w-fit bg-[#9B3C3C] text-white px-4 py-3 font-medium text-sm uppercase rounded-r-md"
           href="/HighLogicFontCreatorPro9.zip"
           download="HighLogicFontCreatorPro9.zip" // Sets the name of the downloaded file
         >
