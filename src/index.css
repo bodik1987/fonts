@@ -4,6 +4,116 @@
 
 /* Font Convert https://kombu.kanejaku.org */
 
+/* panton */
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* rubik */
+@font-face {
+  font-family: "rubik";
+  src: url("/fonts/rubik/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url("/fonts/rubik/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url("/fonts/rubik/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* ventiCF */
+@font-face {
+  font-family: "ventiCF";
+  src: url("/fonts/ventiCF/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ventiCF";
+  src: url("/fonts/ventiCF/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ventiCF";
+  src: url("/fonts/ventiCF/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* firaSans */
+@font-face {
+  font-family: "firaSans";
+  src: url("/fonts/firaSans/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "firaSans";
+  src: url("/fonts/firaSans/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "firaSans";
+  src: url("/fonts/firaSans/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* ceraPro */
+@font-face {
+  font-family: "ceraPro";
+  src: url("/fonts/ceraPro/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ceraPro";
+  src: url("/fonts/ceraPro/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ceraPro";
+  src: url("/fonts/ceraPro/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
 /* eUkraine */
 @font-face {
   font-family: "eUkraine";
@@ -173,6 +283,35 @@
   font-style: normal;
 }
 
+/* montserrat */
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat/font-semibold.woff2") format("woff2");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
 /* mazzardH */
 @font-face {
   font-family: "mazzardH";
@@ -222,6 +361,14 @@
   font-family: "caveat";
   src: url("/fonts/caveat/font-bold.woff2") format("woff2");
   font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* anjhay */
+@font-face {
+  font-family: "anjhay";
+  src: url("/fonts/anjhay/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
   font-style: normal;
 }
 

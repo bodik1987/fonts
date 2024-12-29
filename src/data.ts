@@ -12,6 +12,12 @@ export const fonts = [
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
+    id: 6,
+    name: "Rozetka",
+    font: "font-rozetka",
+    weights: ["font-normal", "font-bold"],
+  },
+  {
     id: 3,
     name: "Aptos",
     font: "font-aptos",
@@ -24,16 +30,28 @@ export const fonts = [
     weights: ["font-normal", "font-bold"],
   },
   {
+    id: 14,
+    name: "FiraSans",
+    font: "font-firaSans",
+    weights: ["font-normal", "font-medium", "font-bold"],
+  },
+  {
+    id: 17,
+    name: "Panton",
+    font: "font-panton",
+    weights: ["font-normal", "font-medium", "font-bold"],
+  },
+  {
     id: 5,
     name: "Google Sans",
     font: "font-googleSans",
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
-    id: 6,
-    name: "Rozetka",
-    font: "font-rozetka",
-    weights: ["font-normal", "font-bold"],
+    id: 10,
+    name: "Tt First Neue",
+    font: "font-tTFirstNeue",
+    weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
     id: 7,
@@ -42,10 +60,22 @@ export const fonts = [
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
+    id: 18,
+    name: "Montserrat",
+    font: "font-montserrat",
+    weights: ["font-normal", "font-medium", "font-semibold", "font-bold"],
+  },
+  {
     id: 8,
     name: "MazzardH",
     font: "font-mazzardH",
     weights: ["font-normal", "font-medium", "font-semibold", "font-bold"],
+  },
+  {
+    id: 14,
+    name: "Cera Pro",
+    font: "font-ceraPro",
+    weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
     id: 9,
@@ -54,9 +84,15 @@ export const fonts = [
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
-    id: 10,
-    name: "Tt First Neue",
-    font: "font-tTFirstNeue",
+    id: 15,
+    name: "VentiCF",
+    font: "font-ventiCF",
+    weights: ["font-normal", "font-medium", "font-bold"],
+  },
+  {
+    id: 16,
+    name: "Rubik",
+    font: "font-rubik",
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
@@ -71,4 +107,12 @@ export const fonts = [
     font: "font-caveat",
     weights: ["font-normal", "font-bold"],
   },
+  {
+    id: 13,
+    name: "Anjhay",
+    font: "font-anjhay",
+    weights: ["font-normal"],
+  },
 ];
+
+// 19
