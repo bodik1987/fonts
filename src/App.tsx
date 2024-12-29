@@ -33,14 +33,14 @@ export default function App() {
   return (
     <main className="max-w-[1400px] mx-auto p-4 md:p-6">
       <p
-        className={`${selectedFont.font} ${selectedWeight} text-2xl md:text-4xl bg-white/50 text-neutral-800 p-3 md:p-4`}
+        className={`${selectedFont.font} ${selectedWeight} text-2xl md:text-3xl bg-white text-neutral-800 p-3 md:p-4`}
       >
         <span className="text-[#9B3C3C]">FONTS for UA | PL | EN </span>
         1234567890 іZażółć Уукїнас ьимерхоті єgęśląjaźń $ ₴ € Ї=-+.,!@#$%^&*()_
       </p>
 
-      <p className="mt-6 text-xs font-medium text-neutral-600">Fonts</p>
-      <div className="mt-2 flex flex-wrap gap-1.5">
+      <p className="mt-6 label">Fonts</p>
+      <div className="mt-2 flex flex-wrap gap-1.5 bg-[#1A1A1A] p-2">
         {fonts.map((font) => (
           <FontNameButton
             key={font.id}
@@ -53,7 +53,7 @@ export default function App() {
 
       <div className="mt-4 flex items-end gap-6">
         <div className="w-full max-w-md">
-          <p className="mb-3 text-xs font-medium text-neutral-600">Font size</p>
+          <p className="mb-3 label">Font size</p>
           <Slider
             min={14}
             max={72}
@@ -62,10 +62,8 @@ export default function App() {
           />
         </div>
         <div>
-          <p className="text-xs text-right font-medium text-neutral-600">
-            Font weight
-          </p>
-          <div className="mt-1 flex space-x-2">
+          <p className="label">Font weight</p>
+          <div className="mt-2 flex space-x-2 bg-[#e0e0e0] p-[2px] rounded-lg">
             {selectedFont.weights.map((weight) => (
               <FontWeightButton
                 key={weight}
@@ -78,17 +76,15 @@ export default function App() {
         </div>
 
         <div>
-          <p className="mt-4 text-right text-xs font-medium text-neutral-600 whitespace-nowrap">
-            Second font
-          </p>
-          <div className="mt-1 w-full flex flex-col gap-2 relative whitespace-nowrap">
+          <p className="label">Second font</p>
+          <div className="mt-2 w-full flex flex-col gap-2 relative whitespace-nowrap">
             {fontsList && (
               <>
                 <div
                   onClick={() => setFontsList(false)}
-                  className="fixed bg-black/25 inset-0 z-10 "
+                  className="fixed bg-black/45 backdrop-grayscale inset-0 z-10"
                 />
-                <div className="absolute bottom-full -translate-y-2 right-0 flex flex-col bg-white max-h-[280px] overflow-y-auto z-20">
+                <div className="absolute bottom-full -translate-y-2 right-0 flex flex-col bg-white max-h-[280px] overflow-y-auto z-20  rounded-md">
                   {fonts.map((font) => (
                     <FontNameButton
                       key={font.id}
@@ -103,7 +99,7 @@ export default function App() {
             )}
             <button
               onClick={() => setFontsList(!fontsList)}
-              className="w-fit h-10 px-3 bg-white ring-2 ring-[#FC8C67]"
+              className="w-fit h-10 px-3 bg-[#FCE35B] font-medium rounded-md"
             >
               {secondFont.name}
             </button>
@@ -116,30 +112,30 @@ export default function App() {
         type="text"
         value={input}
         placeholder="Enter text"
-        className={`${selectedFont.font} ${selectedWeight} mt-8 p-4 outline-none focus:border-4 focus:border-[#9B3C3C] leading-none w-full border-4 border-yellow-500`}
+        className={`${selectedFont.font} ${selectedWeight} mt-8 p-4 outline-none focus:border-4 focus:border-[#9B3C3C] leading-none w-full border-4 border-[#FC8C67] rounded-t-md`}
         onChange={(e) => setInput(e.target.value)}
         onBlur={() => setLocalText(input)}
       />
 
       <div
         style={{ fontSize: `${fontSize}px` }}
-        className={`${secondFont.font} ${selectedWeight} w-full bg-white/50 p-4`}
+        className={`${secondFont.font} ${selectedWeight} w-full bg-white/50 text-black/80 p-4 border-b-4 border-x-4 border-[#FCE35B] rounded-b-md overflow-hidden`}
       >
         {input}
       </div>
 
-      <p className="mt-8 text-xs font-medium text-neutral-600">Downloads</p>
+      <p className="mt-8 label">Downloads</p>
       <div className="mt-1 flex gap-4">
         <a
-          className="block w-fit bg-[#0A8064] text-white px-4 py-3"
-          href="/fonts.zip" // Path to the file in the public folder
+          className="block w-fit bg-[#0A8064] text-white px-4 py-3 font-medium text-sm uppercase rounded-md"
+          href="/fonts.zip"
           download="fonts.zip" // Sets the name of the downloaded file
         >
           All fonts
         </a>
         <a
-          className="block w-fit bg-[#2473AD] text-white px-4 py-3"
-          href="/HighLogicFontCreatorPro9.zip" // Path to the file in the public folder
+          className="block w-fit bg-[#0A8064] text-white px-4 py-3 font-medium text-sm uppercase rounded-md"
+          href="/HighLogicFontCreatorPro9.zip"
           download="HighLogicFontCreatorPro9.zip" // Sets the name of the downloaded file
         >
           FontCreator Pro 9

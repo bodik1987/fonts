@@ -26,8 +26,10 @@ export default function FontWeightButton({
     <button
       onClick={() => setSelectedWeight(weight)}
       className={`${
-        weight === selectedWeight && "ring-2 ring-[#FC8C67]"
-      } ${weight} w-10 h-10 bg-white`}
+        weight === selectedWeight
+          ? "bg-white text-black shadow-lg"
+          : "text-black/50"
+      } ${weight} w-10 h-8 rounded-md`}
       key={weight}
     >
       {getWeight()}

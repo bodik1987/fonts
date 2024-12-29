@@ -64,16 +64,16 @@ export default function Slider({
     <div className="w-full max-w-md mx-auto mb-3">
       <div
         ref={sliderRef}
-        className="relative h-2 bg-white cursor-pointer"
+        className="relative h-2 bg-white cursor-pointer rounded-md"
         onMouseDown={handleStartDrag}
         onTouchStart={handleStartDrag}
       >
         <div
-          className="absolute h-full bg-[#FC8C67]"
+          className="absolute h-full bg-[#707070] rounded-md"
           style={{ width: `${sliderPercent}%` }}
         ></div>
         <div
-          className="absolute w-6 h-6 bg-[#9B3C3C] transform -translate-x-1/2 -top-full cursor-pointer"
+          className="absolute w-6 h-6 bg-black shadow-lg rounded-full transform -translate-x-1/2 -top-full cursor-pointer"
           style={{ left: `${sliderPercent}%` }}
         ></div>
       </div>

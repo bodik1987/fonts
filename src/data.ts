@@ -66,6 +66,12 @@ export const fonts = [
     weights: ["font-normal", "font-medium", "font-semibold", "font-bold"],
   },
   {
+    id: 15,
+    name: "VentiCF",
+    font: "font-ventiCF",
+    weights: ["font-normal", "font-medium", "font-bold"],
+  },
+  {
     id: 8,
     name: "MazzardH",
     font: "font-mazzardH",
@@ -81,12 +87,6 @@ export const fonts = [
     id: 9,
     name: "Mont",
     font: "font-mont",
-    weights: ["font-normal", "font-medium", "font-bold"],
-  },
-  {
-    id: 15,
-    name: "VentiCF",
-    font: "font-ventiCF",
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {

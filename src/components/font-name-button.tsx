@@ -16,14 +16,14 @@ export default function FontNameButton({
   return (
     <button
       className={`${font.font} ${
-        selectedFont === font ? "border-[#FC8C67]" : "border-transparent"
-      } border-4 bg-white px-2 md:px-3 py-1 md:py-2 whitespace-nowrap text-right`}
+        selectedFont === font ? "bg-[#FCE35B]" : "bg-white"
+      } px-3 md:px-4 py-2 md:py-3 whitespace-nowrap text-right transition-all`}
       onClick={() => {
         setSelectedFont(font);
         onClose && onClose();
       }}
     >
-      <span className="text-xl">{font.name}</span>
+      <span className="text-xl md:text-2xl">{font.name}</span>
     </button>
   );
 }
