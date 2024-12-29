@@ -3,6 +3,7 @@ import FontNameButton from "./components/font-name-button";
 import { fonts } from "./data";
 import FontWeightButton from "./components/font-weight-button";
 import useLocalStorage from "./hooks/useLocalStorage";
+import Slider from "./components/slider";
 
 export type Font = {
   id: number;
@@ -23,8 +24,8 @@ export default function App() {
 
   const [fontSize, setFontSize] = useState(24);
 
-  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFontSize(Number(e.target.value));
+  const handleSliderChange = (value: number) => {
+    setFontSize(value);
   };
 
   const [fontsList, setFontsList] = useState(false);
@@ -50,15 +51,12 @@ export default function App() {
         ))}
       </div>
 
-      <div className="mt-4 flex items-end gap-4">
+      <div className="mt-4 flex items-end gap-6">
         <div className="w-full max-w-md">
-          <p className="text-xs font-medium text-neutral-600">Font size</p>
-          <input
-            className="w-full h-3 bg-white appearance-none cursor-pointer range-lg"
-            type="range"
+          <p className="mb-3 text-xs font-medium text-neutral-600">Font size</p>
+          <Slider
             min={14}
             max={72}
-            step={1}
             value={fontSize}
             onChange={handleSliderChange}
           />
