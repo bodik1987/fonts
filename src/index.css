@@ -372,6 +372,14 @@
   font-style: normal;
 }
 
+/* druk */
+@font-face {
+  font-family: "druk";
+  src: url("/fonts/druk/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
 /* jetBrainsMono */
 @font-face {
   font-family: "jetBrainsMono";
@@ -390,6 +398,28 @@
 @font-face {
   font-family: "jetBrainsMono";
   src: url("/fonts/jetBrainsMono/font-bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* сoreRhino */
+@font-face {
+  font-family: "сoreRhino";
+  src: url("/fonts/сoreRhino/font-regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "сoreRhino";
+  src: url("/fonts/сoreRhino/font-medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "сoreRhino";
+  src: url("/fonts/сoreRhino/font-bold.woff2") format("woff2");
   font-weight: 700; /* Bold */
   font-style: normal;
 }

@@ -77,7 +77,24 @@ export default function App() {
         </div>
       </div>
 
-      <div className="mt-8">
+      <input
+        style={{ fontSize: `${fontSize}px` }}
+        type="text"
+        value={input}
+        placeholder="Enter text"
+        className={`${selectedFont.font} ${selectedWeight} mt-4 p-4 outline-none focus:border-4 focus:border-[#9B3C3C] leading-none w-full border-4 border-[#FC8C67] rounded-t-md`}
+        onChange={(e) => setInput(e.target.value)}
+        onBlur={() => setLocalText(input)}
+      />
+
+      <div
+        style={{ fontSize: `${fontSize}px` }}
+        className={`${secondFont.font} ${selectedWeight} w-full bg-white/50 text-black/80 p-4 border-b-4 border-x-4 border-[#FCE35B] rounded-b-md overflow-hidden`}
+      >
+        {input}
+      </div>
+
+      <div className="mt-2">
         <p className="label">Second font</p>
         <div className="mt-2 w-full flex flex-col gap-2 relative whitespace-nowrap">
           {fontsList && (
@@ -106,23 +123,6 @@ export default function App() {
             {secondFont.name}
           </button>
         </div>
-      </div>
-
-      <input
-        style={{ fontSize: `${fontSize}px` }}
-        type="text"
-        value={input}
-        placeholder="Enter text"
-        className={`${selectedFont.font} ${selectedWeight} mt-4 p-4 outline-none focus:border-4 focus:border-[#9B3C3C] leading-none w-full border-4 border-[#FC8C67] rounded-t-md`}
-        onChange={(e) => setInput(e.target.value)}
-        onBlur={() => setLocalText(input)}
-      />
-
-      <div
-        style={{ fontSize: `${fontSize}px` }}
-        className={`${secondFont.font} ${selectedWeight} w-full bg-white/50 text-black/80 p-4 border-b-4 border-x-4 border-[#FCE35B] rounded-b-md overflow-hidden`}
-      >
-        {input}
       </div>
 
       <p className="mt-8 label">Downloads</p>

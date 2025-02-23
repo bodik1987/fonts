@@ -12,6 +12,12 @@ export const fonts = [
     weights: ["font-normal", "font-medium", "font-bold"],
   },
   {
+    id: 20,
+    name: "Core Rhino",
+    font: "font-сoreRhino",
+    weights: ["font-normal"],
+  },
+  {
     id: 6,
     name: "Rozetka",
     font: "font-rozetka",
@@ -113,6 +119,12 @@ export const fonts = [
     font: "font-anjhay",
     weights: ["font-normal"],
   },
+  {
+    id: 19,
+    name: "Druk",
+    font: "font-druk",
+    weights: ["font-normal"],
+  },
 ];
 
-// 19
+// 21

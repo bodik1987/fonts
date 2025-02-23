@@ -23,6 +23,8 @@ export default {
         rubik: ["rubik", "sans-serif"],
         panton: ["panton", "sans-serif"],
         montserrat: ["montserrat", "sans-serif"],
+        druk: ["druk", "sans-serif"],
+        сoreRhino: ["сoreRhino", "sans-serif"],
       },
     },
   },
